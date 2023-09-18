@@ -6,3 +6,14 @@
 
 @author: Savant
 """
+
+def task4(n):
+    s = 0
+    while n > 0:
+        s += n%10
+        n //= 10
+    return s
+
+print(task4(3141)) #9
+print(task4(1111)) #4
+print(task4(9999)) #36
